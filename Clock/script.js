@@ -20,4 +20,4 @@ let timeUpdate = () => {
     datee.innerHTML = `${week[day - 1]}, ${months[month]} ${d}, ${year}`;
 }
 
-setInterval(timeUpdate, 500);
+setInterval(timeUpdate, 1000);
