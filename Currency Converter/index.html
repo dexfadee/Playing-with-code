@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        Currency Converter
+    </header>
+    <div class="container">
+        <div class="app">
+            <h1>Choose a currency to convert</h1>
+            <form action="/" method="get">
+                <label for="currency">Choose a currency: </label>
+                <select name="country" id="country">
+                    <option value="inr">Indian Rupee</option>
+                    <option value="usd">US Dollar</option>
+                    <option value="eur">Euro</option>
+                    <option value="aud">Australian Dollar</option>
+                </select>
+                <label for="quantity">Choose a quantity: </label>
+                <input type="number" name="quantity" min="1" id="number">
+                <button type="submit" id="btn">Submit</button>
+            </form>
+            <div class="output">
+                <table>
+                    <caption>Your converted currency table</caption>
+                    <thead>
+                        <tr>
+                            <th>Currency Code</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
